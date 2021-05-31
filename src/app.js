@@ -16,7 +16,7 @@ const schema = gql`
 
 const resolvers = {
   Query: {
-    hey: async (_, { name = ''}) => {
+    hey: async (_, { name = '' }) => {
       return `Yo ${name}`.trim()
     }
   }
