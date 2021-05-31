@@ -1,5 +1,5 @@
 const fastify = require('fastify')
-const fatifyGraghQL = require('fastify-gql')
+const mercurius = require('mercurius')
 const app = fastify()
 
 app.get('/', async () => {
@@ -22,7 +22,7 @@ const resolvers = {
   }
 }
 
-app.register(fatifyGraghQL, {
+app.register(mercurius, {
   schema,
   resolvers,
   graphiql: 'playground',
