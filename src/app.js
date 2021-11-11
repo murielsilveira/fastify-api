@@ -25,7 +25,7 @@ const resolvers = {
 app.register(mercurius, {
   schema,
   resolvers,
-  graphiql: 'playground',
+  graphiql: true,
 })
 
 module.exports = app
