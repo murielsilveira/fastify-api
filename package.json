@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "fastify": "3.23.1",
-    "mercurius": "8.9.1"
+    "mercurius": "11.5.0"
   },
   "devDependencies": {
     "@types/node": "^14",
